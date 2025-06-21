@@ -1,21 +1,98 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+/* Reset basic spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
 header {
   background-color: #007bff;
   color: white;
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Profile Image */
+.profile-pic {
+  display: block;
+  margin: 20px auto;
+  border-radius: 30%;
+  height: 180px; /* 👈 You can change this to your preferred size */
+  width: 150px;  /* 👈 Keep same as height to stay circular */
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+/* Section Styling */
 section {
   background: white;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Links & Buttons */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 15px;
+  }
 }
