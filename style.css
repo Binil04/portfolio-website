@@ -37,9 +37,9 @@ header p {
 .profile-pic {
   display: block;
   margin: 20px auto;
-  border-radius: 30%;
-  height: 180px; /* 👈 You can change this to your preferred size */
-  width: 150px;  /* 👈 Keep same as height to stay circular */
+  border-radius: 50%;
+  height: 140px; 
+  width: 140px;  
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
